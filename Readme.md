@@ -13,14 +13,15 @@ package main
 
 import (
 	"fmt"
-	"os"
+
+	"github.com/matthewmueller/shell"
 )
 
 var sh = shell.Runf
 
 func main() {
-  hi := sh("echo %q", "hi")
-  fmt.Println(hi)
+	hi := sh("echo %q", "hi")
+	fmt.Printf(hi)
 }
 ```
 
